@@ -1,6 +1,7 @@
 * {
 	box-sizing:border-box;
 	font-family:sans-serif;
+	font-size:15px;
 }
 /*TAGS*/
 header {
@@ -16,18 +17,20 @@ nav {
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
-	background-color:#D9D9D9;
+	background-color:rgba(0,0,0,0);
 	width:100%;
 	margin-left:0;
 	top:0;
 	left:0;
-	z-index:1;
+	z-index:100;
+	
 }
 main {
 	display:flex;
 	flex-wrap:nowrap;
 	flex-direction:row;
 	gap:10px;
+	margin-top:100px;
 
 }
 
@@ -38,7 +41,7 @@ main {
 	flex-wrap:wrap;
 	justify-content:flex-start;
 	gap:15px;
-	margin:15px;
+	margin:10px;
 	color:#000000;
 }
 
@@ -51,10 +54,12 @@ main {
 
 .nav-btn-right a {
 	text-decoration:none;
+	font-size:1.5rem;
 	
 }
 .nav-btns-left a {
 	text-decoration:none;
+	font-size:1.5rem;
 }
 
 .link {
@@ -68,12 +73,14 @@ main {
 	display:flex;
 	flex-wrap:wrap;
 	width:50%;
+	margin:5px 10px;
 }
 .imgs-container img {
 	width:50%;
 	aspect-ratio:4/3;
 	object-fit:cover;
-	border:2px solid black;
+	
+	padding:5px;
 }
 .hello-section {
 	display:flex;
@@ -81,6 +88,12 @@ main {
 	flex-direction:column;
 	justify-content:center;
 	width:50%;
+	padding:15px;
 }
 .hello-section h1 {
+	font-size:4rem;
+	align-items:center;
+}
+.hello-section h2 {
+	font-size:3rem;
 }
