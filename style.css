@@ -1,0 +1,16 @@
+* {
+	box-sizing:border-box;
+	font-family:sans-serif;
+}
+
+header {
+	
+}
+
+nav {
+	position:fixed;
+	display:flex;
+	background-color:#000000;
+	width:100%;
+	
+}
