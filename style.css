@@ -2,7 +2,7 @@
 	box-sizing:border-box;
 	font-family:sans-serif;
 }
-
+/*TAGS*/
 header {
 	position:fixed;
 	display:flex;
@@ -22,9 +22,17 @@ nav {
 	top:0;
 	left:0;
 	z-index:1;
-	
-	
 }
+main {
+	display:flex;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	gap:10px;
+
+}
+
+/*CLASSES*/
+/*NAVBAR BTNS*/
 .nav-btns-left {
 	display:flex;
 	flex-wrap:wrap;
@@ -54,4 +62,25 @@ nav {
 }
 .link:hover {
 	color: #a0a5ad;
+}
+/*IMGS MAIN SECTION*/
+.imgs-container {
+	display:flex;
+	flex-wrap:wrap;
+	width:50%;
+}
+.imgs-container img {
+	width:50%;
+	aspect-ratio:4/3;
+	object-fit:cover;
+	border:2px solid black;
+}
+.hello-section {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content:center;
+	width:50%;
+}
+.hello-section h1 {
 }
