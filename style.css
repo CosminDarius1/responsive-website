@@ -82,6 +82,7 @@ main {
 	
 	padding:5px;
 }
+/*HELLO SECTION*/
 .hello-section {
 	display:flex;
 	flex-wrap:wrap;
@@ -96,4 +97,21 @@ main {
 }
 .hello-section h2 {
 	font-size:3rem;
+}
+/*ABOUT SECTION*/
+.about-section {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	width:100%;
+	background-color:#D9D9D9;
+	padding:0 10px;
+}
+.about-section h2 {
+	font-size:2rem;
+}
+.about-section h3 {
+	font-size:1.5rem;
+	padding:0;
+	margin-top:0;
 }
