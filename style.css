@@ -49,14 +49,10 @@ main {
 	margin-right: 15px;
 }
 
-.nav-btn-right a {
+.nav-btn-right a , .nav-btns-left a {
 	text-decoration: none;
 	font-size: 1.5rem;
 	
-}
-.nav-btns-left a {
-	text-decoration: none;
-	font-size: 1.5rem;
 }
 
 .link {
