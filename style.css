@@ -260,6 +260,9 @@ main {
 	.card-img-text {
 		flex-direction: column;
 	}
+	.hello-section {
+		padding-left:0;
+	}
 }
 @media screen and (max-width: 800px) {
 	.card-img-text {
