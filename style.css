@@ -1,28 +1,22 @@
 * {
 	box-sizing:	border-box;
-	font-family: sans-serif;
+	font-family: "Arial";
 	font-size: 15px;
+	background-color:#000000;
+	letter-spacing: 2px;
 }
 /*TAGS*/
-header {
+nav {
 	position: fixed;
 	display: flex;
-	background-color: #000000;
-	width: 100%;
-	justify-content: center;
-}
-
-nav {
-	position:fixed;
-	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,1.0);
 	width: 100%;
 	margin-left: 0;
 	top: 0;
 	left: 0;
-	z-index: 100;
+	z-index: 1;
 	
 	
 }
@@ -42,7 +36,8 @@ main {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	gap: 15px;
-	margin: 10px;
+	margin-left: 20px;
+	margin-top:10px;
 	color: #000000;
 }
 
@@ -50,21 +45,18 @@ main {
 	
 	display: flex;
 	justify-content: flex-end;
-	margin: 15px; 
+	margin-top: 10px; 
+	margin-right: 15px;
 }
 
-.nav-btn-right a {
+.nav-btn-right a , .nav-btns-left a {
 	text-decoration: none;
 	font-size: 1.5rem;
 	
 }
-.nav-btns-left a {
-	text-decoration: none;
-	font-size: 1.5rem;
-}
 
 .link {
-	color: #000000;
+	color: #f7f7f7;
 }
 .link:hover {
 	color: #a0a5ad;
@@ -95,9 +87,11 @@ main {
 .hello-section h1 {
 	font-size: 4rem;
 	align-items: center;
+	color:#f7f7f7;
 }
 .hello-section h2 {
 	font-size: 3rem;
+	color:#f7f7f7;
 }
 /*ABOUT SECTION*/
 .about-section {
@@ -105,18 +99,21 @@ main {
 	flex-wrap: wrap;
 	flex-direction: column;
 	width: 100%;
-	background-color: #D9D9D9;
 	padding: 0 10px;
 }
 .about-section h2 {
 	font-size: 2rem;
 	margin-left: 15px;
+	color:#f7f7f7;
 }
 .about-section h3 {
 	font-size: 1.5rem;
 	padding: 0;
 	margin-top: 0;
 	margin-left: 15px;
+	color: #f7f7f7;
+	width:100%;
+	
 }
 /*PORTFOLIO SECTION*/
 .portfolio-section {
@@ -166,6 +163,7 @@ main {
 	flex-direction: row;
 	padding-top: 0;
 	margin-top: 15px;
+	color:#f7f7f7;
 	
 }
 .card-img-text {
@@ -179,10 +177,10 @@ main {
 	width: 400px;
 	aspect-ratio: auto;
 	justify-content: flex-start;
-	padding: 10 10px;
 	margin-left: 10px;
 	margin-bottom: 10px;
 	border-radius: 10px;
+	border: 1px solid #d9d9d9;
 	
 }
 .card p {
@@ -191,19 +189,84 @@ main {
 	justify-content: center;
 	padding: 0 40px;
 	font-size: 1.5rem;
-	
-	
-	
+	color:#f7f7f7;
 }
-/*card-1 img {
-	width:70%;
-	aspect-ratio:16/9;
-	object-fit:contain
 
-} /*
-.card-1 p {
+/*CONTACT SECTION*/
+.contact-section {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+}
+.contact-section img {
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	width: 20%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.contact-section h2 {
+	font-size: 1.75rem;
+	margin-left: 15px;
+	margin-bottom:0;
+	color:#f7f7f7;
+}
+.contact-section h3 {
+	font-size: 1.5rem;
+	margin-left: 15px;
+	margin-bottom:3px;
+	color:#f7f7f7;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.logo {
+	margin-left: 15px;
+	margin-bottom:10px;
+	width: 24px;
+	height: 24px;
 	display:flex;
-	flex-direction:column;
-	flex-wrap:nowrap;
-	justify-content:center;
+	gap: 5px;
+	padding-bottom:20px;
+	color:#f7f7f7;
+}
+.fa-brands {
+	font-size:30px;
+}
+/* MEDIA SECTION*/
+
+@media screen and (max-width: 400px) {
+	.hello-section {
+		padding:0;
+	}
+	.hello-section h1 {
+		font-size: 3.5rem;
+	}
+	.hello-section h2 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	
+	.card-img-text img {
+		width:100%;
+		object-fit:cover;
+		flex-wrap:column;
+	}
+	.card-img-text {
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 800px) {
+	.card-img-text {
+		flex-direction: column;
+	}
+	.card-img-text img {
+		width: 95%;
+		object-fit: cover;
+	}
 }
