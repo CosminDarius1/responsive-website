@@ -201,13 +201,6 @@ main {
 	width: 100%;
 	justify-content: center;
 }
-.contact-section img {
-	aspect-ratio: 1/1;
-	object-fit: cover;
-	width: 20%;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}
 
 .contact-section h2 {
 	font-size: 1.75rem;
