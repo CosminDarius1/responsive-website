@@ -266,7 +266,8 @@ main {
 		flex-direction: column;
 	}
 	.card-img-text img {
-		width: 95%;
+		width: 100%;
 		object-fit: cover;
+		margin-left:0;
 	}
 }
