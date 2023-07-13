@@ -185,7 +185,6 @@ main {
 .contact-section {
 	margin-top: 10px;
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: column;
 	width: 100%;
 	justify-content: center;
@@ -200,10 +199,10 @@ main {
 .contact-section p {
 	font-size: 1.5rem;
 	margin-left: 15px;
-	margin-bottom:3px;
+	margin-bottom:5px;
 	color:#f7f7f7;
 	margin-top:10px;
-	margin-bottom:5px;
+	margin-right: 15px;
 }
 .logo {
 	margin-left: 15px;
