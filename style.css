@@ -224,10 +224,6 @@ main {
 		object-fit: cover;
 		margin-left:0;
 	}
-	.hello-section {
-		padding:0;
-		width:;
-	}
 	.hello-section p {
 		font-size: 3.5rem;
 	}
