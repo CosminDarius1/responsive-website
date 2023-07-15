@@ -233,6 +233,7 @@ main {
 	.imgs-container {
 		flex-direction:column;
 		object-fit:cover;
+		padding-top:20px;
 	}
 	.imgs-container img {
 		width: 100%;
